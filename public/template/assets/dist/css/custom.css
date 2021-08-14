@@ -1,0 +1,883 @@
+/* SAYANG CUSTOM BRANDING VARIABLE */
+:root {
+  --sayang-color: #66bb6a;
+  --sayang-dark-color: #333333;
+  --sayang-light-color: #FFFFFF;
+}
+.btn-warning,
+.btn-primary{
+  color: white !important;
+}
+.card{
+  border-radius: 0;
+}
+.carousel-item {
+  height: 90vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* END OF SAYANG CUSTOM BRANDING VARIABLE */
+.category-icon:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* TExt shadown in white text */
+.text-white-shadow{
+  text-shadow: 0 0 3px black;
+}
+.no-box-shadow{
+  box-shadow: none;
+}
+/* Modal Custom */
+.modal-content{
+  border-radius: 0;
+  border:0;
+  box-shadow : 0px 0px 0px 0px;
+}
+/* TAB BACKGROUND COLOR */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: var(--sayang-color);
+}
+
+.widget-header {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.widget-header .widget-view {
+    padding: 5px 7px;
+    display: inline-block;
+    position: relative;
+    text-align: center; 
+}
+.widget-header .icon-area {
+    font-size: 20px;
+    display: inline-block;
+    width: 36px;
+    height: 30px;
+    color: #969696; 
+}
+.widget-header .icon-area .notify {
+    position: absolute;
+    top: -10px;
+}
+.widget-header .icon-area .notify .badge{
+    border-radius:10px;
+    color: white;
+    font-size: 12px;
+}
+.widget-header .icon {
+    color: #969696; }
+    .widget-header .icon .notify {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+.widget-header .text {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    line-height: 1.2; 
+}
+  .widget-header a {
+    color: #212529; 
+}
+  .widget-header form {
+    min-width: 280px; 
+}
+  .widget-header:hover i {
+    color: #212529; 
+}
+
+/*.form-control:focus{
+    border-color: var(--sayang-color);
+}*/
+.content-wrapper-front-end {
+    padding-top: 70px;
+    background-color: white;
+}
+/*Navbar*/
+.nav-fixed{
+    border-bottom: 1px solid #dee2e6;
+    /*box-shadow: 0px 5px 5px -6px rgba(0,0,0,.2);*/
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+#welcome .jumbotron{
+    border-radius: 0;
+    background-color: transparent;
+}
+/*Product card */
+.product-card{
+    border-radius: 0;
+}
+.product-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.item-btn{
+    width: 100%;
+    border-radius: 0;
+    padding:0px;
+    margin:0px;
+}
+
+.item-btn span{
+    font-size: 18px;
+}
+.product-info .product-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Help centre*/
+.topic-card{
+  cursor: pointer;
+}
+.topic-card:hover{
+  transform: scale(1.03);
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  border: 0;
+  background-color: #f8f9fa;
+  border-bottom: 3px solid var(--sayang-color);
+}
+/*Span timeer countdown*/
+span.ends-in {
+    background-color: var(--sayang-color);
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    right: 0px;
+    top: 10px;
+    padding: 1px 16px;
+    font-weight: 700;
+    border-radius: 0;
+    text-align: center;
+    position: absolute;
+    /* text-transform: uppercase; */
+    height: 26px;
+    line-height: 24px;
+}
+
+/*Mega menu*/
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: white;
+  width: 100%;
+  height: 450px;
+  -webkit-box-shadow: 0 5px 6px -6px #777;
+    -moz-box-shadow: 0 5px 6px -6px #777;
+       box-shadow: 0 5px 6px -6px #777;
+}
+/* 
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+} 
+
+.image img{
+    position:absolute;
+} 
+
+NOTE: need to create .{your_custom_name}-image override 
+instead of overiding existing .image built-in class, 
+because this will affect entire .image classes
+*/
+
+/*SWicth css */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--sayang-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*Scrollable notification box*/
+.scrollable-menu {
+    height: auto;
+    max-height: 250px;
+    overflow-x: hidden;
+}
+
+.dropdown-item:hover{
+  background-color: var(--sayang-color);
+}
+/*PAgination*/
+.page-item.active .page-link{
+  background-color: var(--sayang-color);
+  border-color: var(--sayang-color);
+}
+
+/*all product list menu*/
+.list-menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.list-menu li {
+  margin-bottom: 5px; 
+}
+.list-menu a {
+  color: #343a40; 
+}
+.list-menu a:hover {
+  color: var(--sayang-color); 
+}
+
+/*Account Activation*/
+.account-activation a{
+  color: black;
+}
+.account-activation a:hover{
+  color:var(--sayang-color);
+}
+/*cart footer*/
+.cart-footer .btn-warning{
+  float: right;
+}
+/* 
+  You want a simple and fancy tooltip?
+  Just copy all [data-tooltip] blocks:
+*/
+[data-tooltip] {
+  position: relative;
+  z-index: 10;
+}
+
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  bottom: calc(100% + 5px);
+  pointer-events: none;
+  transition: 0.2s;
+  will-change: transform;
+}
+
+/* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  padding: 10px 18px;
+  min-width: 50px;
+  max-width: 300px;
+  width: max-content;
+  width: -moz-max-content;
+  border-radius: 6px;
+  font-size: 14px;
+/*   font-size: 0.73rem; */
+  background-color: rgba(59, 72, 80, 0.9);
+  background-image: linear-gradient(30deg,
+    rgba(59, 72, 80, 0.44),
+    rgba(59, 68, 75, 0.44),
+    rgba(60, 82, 88, 0.44));
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+  white-space: pre-wrap;
+  transform: translate(-50%, -5px) scale(0.5);
+}
+
+/* Tooltip arrow */
+[data-tooltip]:after {
+  content: '';
+  border-style: solid;
+  border-width: 5px 5px 0px 5px;
+  border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+  transition-duration: 0s; /* If the mouse leaves the element, 
+                              the transition effects for the 
+                              tooltip arrow are "turned off" */
+  transform-origin: top;   /* Orientation setting for the
+                              slide-down effect */
+  transform: translateX(-50%) scaleY(0);
+}
+
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
+  transition-delay: 0.3s;
+  transform: translate(-50%, -5px) scale(1);
+}
+/* Slide down effect only on mouseenter (NOT on mouseleave) */
+[data-tooltip]:hover:after {
+  transition-delay: 0.5s; /* Starting after the grow effect */
+  transition-duration: 0.2s;
+  transform: translateX(-50%) scaleY(1);
+}
+/*
+  That's it.
+*/
+
+
+/*
+  If you want some adjustability
+  here are some orientation settings you can use:
+*/
+
+/* LEFT */
+/* Tooltip + arrow */
+[data-tooltip-location="left"]:before,
+[data-tooltip-location="left"]:after {
+  left: auto;
+  right: calc(100% + 5px);
+  bottom: 50%;
+}
+
+/* Tooltip */
+[data-tooltip-location="left"]:before {
+  transform: translate(-5px, 50%) scale(0.5);
+}
+[data-tooltip-location="left"]:hover:before {
+  transform: translate(-5px, 50%) scale(1);
+}
+
+/* Arrow */
+[data-tooltip-location="left"]:after {
+  border-width: 5px 0px 5px 5px;
+  border-color: transparent transparent transparent rgba(55, 64, 70, 0.9);
+  transform-origin: left;
+  transform: translateY(50%) scaleX(0);
+}
+[data-tooltip-location="left"]:hover:after {
+  transform: translateY(50%) scaleX(1);
+}
+
+
+
+/* RIGHT */
+[data-tooltip-location="right"]:before,
+[data-tooltip-location="right"]:after {
+  left: calc(100% + 5px);
+  bottom: 50%;
+}
+
+[data-tooltip-location="right"]:before {
+  transform: translate(5px, 50%) scale(0.5);
+}
+[data-tooltip-location="right"]:hover:before {
+  transform: translate(5px, 50%) scale(1);
+}
+
+[data-tooltip-location="right"]:after {
+  border-width: 5px 5px 5px 0px;
+  border-color: transparent rgba(55, 64, 70, 0.9) transparent transparent;
+  transform-origin: right;
+  transform: translateY(50%) scaleX(0);
+}
+[data-tooltip-location="right"]:hover:after {
+  transform: translateY(50%) scaleX(1);
+}
+
+
+
+/* BOTTOM */
+[data-tooltip-location="bottom"]:before,
+[data-tooltip-location="bottom"]:after {
+  top: calc(100% + 5px);
+  bottom: auto;
+}
+
+[data-tooltip-location="bottom"]:before {
+  transform: translate(-50%, 5px) scale(0.5);
+}
+[data-tooltip-location="bottom"]:hover:before {
+  transform: translate(-50%, 5px) scale(1);
+}
+
+[data-tooltip-location="bottom"]:after {
+  border-width: 0px 5px 5px 5px;
+  border-color: transparent transparent rgba(55, 64, 70, 0.9) transparent;
+  transform-origin: bottom;
+}
+
+.list-group-item.active{
+  background-color: var(--sayang-color);
+  border-color: var(--sayang-color);
+}
+.active .bs-stepper-circle{
+  background-color: var(--sayang-color);
+}
+
+@media all {
+  .app-container{
+    max-width: 1610px; 
+  }
+}
+
+.table-custom td, .table-custom th{
+  padding: 5px;
+  vertical-align: middle;
+}
+.pagination{
+  justify-content: flex-end !important;
+}
+
+/* GLOBAL CLASSES CAN BE USE */
+.text-ellipsis{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+.text-line-through{
+  text-decoration: line-through;
+}
+.block-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block-element{
+  display: block;
+}
+.table-cell-nowrap td, .table-cell-nowrap th{
+  white-space: nowrap;
+}
+.table-sort{
+  cursor: pointer;
+}
+.table-sort:hover{
+  opacity: 0.8;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+input.input-readonly[readonly]{
+	background: #FFF;
+}
+.box-shadow-none{
+  box-shadow: none !important;
+}
+/* END OF GLOBAL CLASSES CAN BE USE */
+
+/* CUSTOM SAYANG BRANDING THEMES */
+.sayang-link-active{
+  color: var(--sayang-color);
+}
+.sayang-user-panel.user-panel{
+  border-top: 1px solid var(--sayang-color);
+  border-bottom: 1px solid var(--sayang-color);
+}
+.sayang-nav-pills.nav-pills .nav-link:not(.active):hover,
+.sayang-nav-pills.nav-pills .nav-link.sayang-nav-link-active{
+  color: var(--sayang-color);
+}
+.sayang-nav-pills.nav-pills .nav-link.active, 
+.sayang-nav-pills.nav-pills .show > .nav-link{
+  background-color: var(--sayang-color);
+}
+.sayang-layout-navbar-fixed.layout-navbar-fixed .wrapper .sidebar-sayang-primary .brand-link:not([class*="navbar"]) {
+  background-color: var(--sayang-light-color);
+}
+.sayang-sidebar.sidebar{
+  background: var(--sayang-light-color);
+}
+.sayang-navbar.navbar{
+  background-color: var(--sayang-color);
+}
+.card-sayang.card-outline{
+  border-top: 3px solid var(--sayang-color);
+}
+.sayang-dropdown-item.dropdown-item.active, .sayang-dropdown-item.dropdown-item:active{
+  background-color: var(--sayang-color);
+}
+.sayang-datatables td, .sayang-datatables th{
+  padding: 5px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+.text-sayang{
+  color: var(--sayang-color);
+}
+.sayang-list-group > .list-group-item{
+  font-size: 14px;
+  padding: 0.45rem 0rem;
+}
+.sayang-img-upload-preview{
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+}
+.sayang-featured-photo-overlay{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 3px 14px;
+  font-size: 14px;
+  background: var(--sayang-color);
+  color: #FFFFFF;
+}
+.sayang-remove-photo-overlay{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.sayang-set-featured-photo-overlay{
+  position: absolute;
+  bottom: 5px;
+  right: 40px;
+}
+.sayang-featured-photo-bordered{
+  border: 3px solid var(--sayang-color);
+}
+.sayang-photo-bordered{
+  border: 3px solid transparent;
+}
+.sayang-card-photo{
+  object-fit: cover;
+  width: 100%;
+  height: 170px;
+}
+.sayang-card-img-listing{
+  object-fit: cover;
+  height: 210px;
+}
+/* END OF CUSTOM SAYANG BRANDING THEMES */
+
+/* Tracking orders css */
+.track {
+  position: relative;
+  background-color: #ddd;
+  height: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 50px
+}
+
+.track .step {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 25%;
+  margin-top: -18px;
+  text-align: center;
+  position: relative
+}
+
+.track .step.active:before {
+  background: var(--sayang-color);
+}
+
+.track .step::before {
+  height: 7px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 18px
+}
+
+.track .step.active .icon {
+  background: var(--sayang-color);
+  color: #fff
+}
+
+.track .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  border-radius: 100%;
+  background: #ddd
+}
+
+.track .step.active .text {
+  font-weight: 400;
+  color: #000
+}
+
+.track .text {
+  display: block;
+  margin-top: 7px
+}
+/* Sticky Card on scroll */
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+}
+
+/*	$Loader Quadrant */
+.loader-span {
+  position: absolute;
+  top: 85px;
+  left: 120px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.loader-quart {
+	border-radius: 50px;
+	border: 4px solid rgba(255,255,255,0.4);
+}
+.loader-quart:after {
+	content: '';
+	position: absolute;
+	top: -6px; 
+	left: -6px;
+	bottom: -6px;
+	right: -6px;
+	border-radius: 50px;
+	border: 4px solid transparent;
+	border-top-color: var(--sayang-color);
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  	0%{ -webkit-transform: rotate(0deg); tranform: rotate(0deg);}
+	100%{ -webkit-transform: rotate(360deg); tranform: rotate(360deg);}
+}
+@keyframes spin {
+	0%{ -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+/*	End of $Loader Quadrant */
+
+.cart-product-photo-thumb{
+  height: 60px;
+  width: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.input-number-remove-arrow::-webkit-outer-spin-button,
+input.input-number-remove-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input-number-remove-arrow {
+  -moz-appearance: textfield;
+}
+
+.payment-channel-wrapper{
+  padding: 8px;
+  padding-left: 15px;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.payment-channel-wrapper.active{
+  border: 1px solid var(--sayang-color);
+}
+.payment-channel-wrapper.active .payment-channel-selected-icon{
+  color: var(--sayang-color);
+}
+.payment-channel-wrapper .payment-channel-disabled{
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+  cursor: default;
+  position: absolute;
+  bottom:0px;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  background: rgba(197, 197, 197, 0.7);
+  text-shadow: 1px 0px 3px #fff;
+}
+
+.product-filter-checkbox{
+  font-weight: normal !important;
+  font-size: 15px;
+}
+.product-filter-checkbox .custom-control-label{
+  margin-left: 6px;
+}
+
+.product-card-img-list{
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.product-card-list-information{
+  padding-left: 10px;
+}
+.product-card-countdown{
+  margin-top: 15px;
+}
+.product-card-btn-purchase{
+  margin-left: 3.5px;
+}
+
+  /* Rating Star Widgets Style */
+  .rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    
+    -moz-user-select:none;
+    -webkit-user-select:none;
+  }
+  .rating-stars ul > li.star {
+    display:inline-block;
+    
+  }
+
+  /* Idle State of the stars */
+  .rating-stars ul > li.star > i.fa {
+    font-size:1.5em; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+  }
+
+  /* Hover state of the stars */
+  .rating-stars ul > li.star.hover > i.fa {
+    color:var(--sayang-color);
+  }
+
+  /* Selected state of the stars */
+  .rating-stars ul > li.star.selected > i.fa {
+    color:var(--sayang-color);
+  }
+  
+  /* Custom modal */
+  .modal .modal-dialog-aside{
+    width: 350px;
+    max-width:80%; height: 100%; margin:0;
+    transform: translate(0); transition: transform .2s;
+  }
+  
+  .modal .modal-dialog-aside .modal-content{  height: inherit; border:0; border-radius: 0;}
+  .modal .modal-dialog-aside .modal-content .modal-body{ overflow-y: auto }
+  .modal.fixed-left .modal-dialog-aside{ margin-left:auto;  transform: translateX(100%); }
+  .modal.fixed-right .modal-dialog-aside{ margin-right:auto; transform: translateX(-100%); }
+  
+  .modal.show .modal-dialog-aside{ transform: translateX(0);  }
+
+  .list-group-item:last-child{
+    border-radius: 0;
+  }
+  .list-group-item:first-child{
+    border-radius: 0;
+  }
+  
+@media screen and (max-width: 567px){
+  .product-card-img-list{
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+  .product-card-btn-purchase .product-card-buy-now{
+    margin-right: 0;
+    padding-right: 0px;
+  }
+  .product-card-btn-purchase .product-card-place-bid{
+    margin-left: 0;
+    padding-left: 0px;
+  }
+  .product-card-list-information{
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+  }
+  .product-card-list-information .product-info{
+    font-size: 16px !important;
+  }
+  .product-card-list-information .store-info{
+    font-size: 18px !important;
+  }
+  .product-card-countdown{
+    margin-top: 0px;
+  }
+  .product-card-btn-purchase{
+    margin-left: -7.5px;
+  }
+}
+@media all and (min-width: 992px) {
+	.navbar .has-megamenu{position:static!important;}
+}

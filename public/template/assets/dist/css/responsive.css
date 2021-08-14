@@ -1,0 +1,92 @@
+/*less than 1199 px */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .item-info {
+        font-size: 9px;
+    }
+    .carousel-inner{
+        height: 280px !important;
+    }
+    .footer-right{
+       margin-left: 0 !important;
+       text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .store-info,
+    .product-info {
+        font-size: 12px;
+    }
+    .cart-img{
+        display: none;
+    }
+    .cart-footer{
+        text-align: center;
+    }
+    .cart-footer .btn{
+        margin-top: 3px;
+    }
+    .carousel-inner{
+        height: 150px !important;
+    }
+    .footer-right{
+       margin-left: 0 !important;
+       text-align: center;
+    }
+
+    .track .text {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .store-info,
+    .product-info {
+      font-size: 11px;
+    }
+    .cart-img{
+        display: none;
+    }
+    .cart-footer{
+        display: flex;
+        justify-content: center;
+    }
+    .item-btn span{
+        font-size: 11px;
+    }
+    .item-btn small{
+        font-size: 8px;
+    }
+    .home-title{
+        font-size: 18px;
+    }
+    .sayang-card-img-listing{
+        object-fit: cover;
+        height: 150px;
+    }
+    .btn-see-more{
+        width: 100%;
+    }
+    .topic-name{
+        font-size: 12px;
+    }
+    .carousel-inner{
+        height: 120px !important;
+    }
+    .help-centre-title{
+        font-size: 25px;
+    }
+    .step-4-text{
+        font-size: 15px;
+    }
+    .bs-stepper .step-trigger .bs-stepper-circle{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .track .text {
+        font-size: 10px;
+    }
+}
+
+

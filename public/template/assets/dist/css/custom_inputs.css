@@ -1,0 +1,19 @@
+.imagePreview {
+    width: auto;
+    height: 180px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    object-fit: cover;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.upload-btn {
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
