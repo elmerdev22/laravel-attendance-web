@@ -9,7 +9,7 @@ use Utility;
 
 class LoginController extends Controller
 {
-    public function index(Request $request, $key_token){
+    public function index(Request $request){
         
         $response = [
             'success' => false,
@@ -17,7 +17,7 @@ class LoginController extends Controller
             'message' => 'Invalid Employee No.'
         ];
 
-        $data = Employee::where('employee_no', 'E-'.$request->employeeNo)->where('key_token', $key_token)->first();
+        $data = Employee::where('employee_no', 'E-'.$request->employeeNo)->first();
         
         if($data){
             $response['success'] = true;
