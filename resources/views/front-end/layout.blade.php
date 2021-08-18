@@ -22,23 +22,11 @@
 	</head>
 	<body>
 		
-        @if(!Route::is('admin.login'))
-			<!-- ========================= HEADER ========================= -->
-			@include('front-end.header.index')
-			<!-- ========================= HEADER END// ========================= -->
-        @endif
-		
 		<!-- ========================= CONTENT ========================= -->
 			<div style="padding-top: 60px;">
 				@yield('content')
 			</div>
 		<!-- ========================= CONTENT END// ========================= -->
-		
-        @if(!Route::is('admin.login'))
-			<!-- ========================= FOOTER ========================= -->
-			@include('front-end.footer.index')
-			<!-- ========================= FOOTER END // ========================= -->
-        @endif
 		
         <script src="{{asset('template/assets/plugins/jquery/jquery.min.js')}}"></script>
         <!-- Bootstrap 4 -->

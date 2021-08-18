@@ -17,8 +17,14 @@ class Utility{
         return Storage::get('public/employees/'.$employee_no.'/attendance'.$filename); 
     }
     
-    public static function getdefaultPhoto(){
-        return asset('img/user.png');
+    public static function getDefaultPhoto($key){
+        
+        $photos = [
+            'user'   => asset('img/user.png'),
+            'selfie' => asset('img/selfie.png'),
+        ];
+
+        return $photos[$key];
     }
 
     public static function attendanceType(){

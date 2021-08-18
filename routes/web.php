@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('welcome');
+})->name('welcome');
+
 // ADMIN LOGIN
 Route::group(['middleware' => ['guest']], function(){
     Route::get('admin/login', function () {

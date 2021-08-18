@@ -20,7 +20,7 @@
         <div class="card mx-auto" style="max-width: 380px; margin-top:100px;">
             <div class="card-body">
                 <div class="text-center mb-4">
-                    <img class="icon icon-lg rounded-circle border" style="width: 100px; height: 100px;" src="https://image.flaticon.com/icons/png/512/560/560216.png">
+                    <img class="icon icon-lg rounded-circle border" style="width: 100px; height: 100px;" src="{{Utility::getDefaultPhoto('user')}}">
                 </div>
                 <!-- ============================ COMPONENT LOGIN FORM  ================================= -->
                 @livewire('auth.login-admin')
