@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\MobileV1\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Employee;
+use Utility;
 
 class LoginController extends Controller
 {
@@ -21,7 +22,7 @@ class LoginController extends Controller
         if($data){
             $response['success'] = true;
             $response['data'] = [
-                'photo'       => $data->photo,
+                'photo'       => $data->photo ? $data->photo : Utility::getDefaultPhoto('user'),
                 'employee_no' => $data->employee_no,
                 'first_name'  => $data->first_name,
                 'last_name'   => $data->last_name,
