@@ -2,7 +2,7 @@
 	<div class="col-sm-7 col-md-8 col-lg-9 text-center text-sm-left">
 		<div class="my-2">
 			Show 
-				<select wire:model="show_entries">
+				<select class="border rounded" wire:model="show_entries">
 					@foreach(Utility::datatableShowEntries() as $value)
 						<option value="{{$value == 1 && $data->total() > 0 ? $data->total() : $value }}">{{$value == 1 ? 'All' : $value}}</option>
 					@endforeach

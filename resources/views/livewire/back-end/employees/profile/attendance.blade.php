@@ -1,5 +1,5 @@
 <div>
-	<div class="card card-outline card-sayang">
+	<div class="card card-primary card-outline">
         <div class="card-header">
             <h4 class="card-title">Attendance</h4>
 			<div class="card-tools">
@@ -66,7 +66,7 @@
         Swal.close();
         Swal.fire({
             title      : param['time'],
-            html       : '<a target="_blank" href='+param['photo']+'>Click here to view full photo.</a>',
+            html       : `(<span>${param['type']}</span>)<br><a target="_blank" href='${param['photo']}'>Click here to view full photo.</a>`,
             imageUrl   : param['photo'],
             imageHeight: 200,
             imageAlt   : 'Loading Photo...',

@@ -16,6 +16,10 @@ class Utility{
     public static function getAttendancePhoto($employee_no, $filename){
         return Storage::get('public/employees/'.$employee_no.'/attendance'.$filename); 
     }
+    
+    public static function getdefaultPhoto(){
+        return asset('img/user.png');
+    }
 
     public static function attendanceType(){
         return [

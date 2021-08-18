@@ -5,6 +5,7 @@ namespace App\Http\Livewire\BackEnd\Employees\Profile;
 use Livewire\Component;
 use App\Models\Attendance as Attendances;
 use PhotoUtility;
+use Utility;
 
 class Attendance extends Component
 {
@@ -28,6 +29,7 @@ class Attendance extends Component
         $photo      = PhotoUtility::attendancePhoto($attendance->employee->employee_no, $attendance->photo);
         
         $data = [
+            'type'  => Utility::attendanceType()[$attendance->type],
             'photo' => $photo,
             'time'  => date('F d, Y h:i:s A', strtotime($attendance->created_at)),
         ];
