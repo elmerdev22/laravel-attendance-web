@@ -97,6 +97,7 @@ class Index extends Component
 
         }catch(\Exception $e){
             $response['success'] = false;
+            dd($e);
         }
     
         if($response['success']){
