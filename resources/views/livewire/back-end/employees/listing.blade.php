@@ -45,7 +45,7 @@
                                         </td>
                                         <td>
                                             @if ($row->birth_date)
-                                                {{date('F d, y', strtotime($row->birth_date))}}
+                                                {{date('F d, Y', strtotime($row->birth_date))}}
                                             @else 
                                                 <span class="text-sm">Not Set</span>
                                             @endif
@@ -54,7 +54,7 @@
                                             <a href="{{route('back-end.employees.profile', ['employee_no' => $row->employee_no, 'key_token' => $row->key_token])}}" class="btn btn-success btn-sm">
                                                 <span class="fas fa-eye"></span>
                                             </a>
-                                            <a href="{{route('back-end.employees.profile', ['employee_no' => $row->employee_no, 'key_token' => $row->key_token])}}" class="btn btn-success btn-sm">
+                                            <a href="{{route('back-end.employees.edit', ['employee_no' => $row->employee_no, 'key_token' => $row->key_token])}}" class="btn btn-success btn-sm">
                                                 <span class="fas fa-edit"></span>
                                             </a>
                                         </td>

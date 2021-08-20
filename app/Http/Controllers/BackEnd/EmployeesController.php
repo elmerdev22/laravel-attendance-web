@@ -12,21 +12,29 @@ class EmployeesController extends Controller
         return view('back-end.employees.index');
     }
 
+    public function add(){
+        return view('back-end.employees.add');
+    }
+
     public function profile($employee_no, $key_token){
-
-        $filter['select'] = [
-            'employees.*'
-        ];
-        
-        $filter['where']['employees.key_token'] = $key_token;
-        
-        $data = QueryUtility::employees($filter)->first();
-
+        $data = self::employeeDetails($key_token);
         return view('back-end.employees.profile', compact('data'));
     }
 
-    public function add(){
-        return view('back-end.employees.add');
+    public function edit($employee_no, $key_token){
+        $data = self::employeeDetails($key_token);
+        return view('back-end.employees.edit', compact('data'));
+    }
+
+    public function employeeDetails($key_token){
+        
+        $filter['select'] = [
+            'employees.*'
+        ];
+
+        $filter['where']['employees.key_token'] = $key_token;
+        
+        return QueryUtility::employees($filter)->first();
     }
     
 }
