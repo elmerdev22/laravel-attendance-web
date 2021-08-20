@@ -11,7 +11,7 @@
         $page_header = [
             'title'       => 'Employee Profile',
             'breadcrumbs' => [
-                ['url' => route('back-end.employees.index'), 'label' => 'Employee'],
+                ['url' => route('back-end.employees.index'), 'label' => 'Employees'],
                 ['url' => '', 'label' => ucwords($data->first_name.' '.$data->last_name)],
             ],
         ];

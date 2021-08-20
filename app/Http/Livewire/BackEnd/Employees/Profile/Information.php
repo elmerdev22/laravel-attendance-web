@@ -4,6 +4,7 @@ namespace App\Http\Livewire\BackEnd\Employees\Profile;
 
 use Livewire\Component;
 use QueryUtility;
+use PhotoUtility;
 
 class Information extends Component
 {
@@ -29,7 +30,8 @@ class Information extends Component
     }
 
     public function render(){
-        $data = $this->data();
-        return view('livewire.back-end.employees.profile.information', compact('data'));
+        $data  = $this->data();
+        $photo = PhotoUtility::employeePhoto($data->employee_no, $data->photo, 'profile');
+        return view('livewire.back-end.employees.profile.information', compact('data','photo'));
     }
 }

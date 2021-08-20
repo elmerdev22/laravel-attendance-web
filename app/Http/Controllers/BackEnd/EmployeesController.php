@@ -24,4 +24,9 @@ class EmployeesController extends Controller
 
         return view('back-end.employees.profile', compact('data'));
     }
+
+    public function add(){
+        return view('back-end.employees.add');
+    }
+    
 }

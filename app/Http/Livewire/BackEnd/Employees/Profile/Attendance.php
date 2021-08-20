@@ -26,7 +26,7 @@ class Attendance extends Component
 
     public function showPhoto($id){
         $attendance = Attendances::with(['employee'])->whereId($id)->first();
-        $photo      = PhotoUtility::attendancePhoto($attendance->employee->employee_no, $attendance->photo);
+        $photo      = PhotoUtility::employeePhoto($attendance->employee->employee_no, $attendance->photo, 'attendance');
         
         $data = [
             'type'  => Utility::attendanceType()[$attendance->type],

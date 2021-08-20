@@ -7,7 +7,7 @@
         </div>
         <div class="card-body box-profile">
             <div class="text-center">
-                <img class="profile-user-img img-fluid img-circle" src="{{$data->photo ? $data->photo : Utility::getDefaultPhoto('user')}}" alt="User profile picture" style="width: 150px; height: 150px;">
+                <img class="profile-user-img img-fluid img-circle" src="{{$data->photo ? $photo : Utility::getDefaultPhoto('user')}}" alt="User profile picture" style="width: 150px; height: 150px;">
             </div>
             <h3 class="profile-username text-center">{{ucwords($data->first_name.' '.$data->middle_name.' '.$data->last_name)}}</h3>
             <p class="text-muted text-center">({{$data->employee_no}})</p>

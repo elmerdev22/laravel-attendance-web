@@ -52,6 +52,11 @@ Route::group(['middleware' => ['auth', 'auth.admin']], function(){
                 'as'    => 'index',
                 'uses'  => $c.'@index'
             ]);
+
+            Route::get('/add', [
+                'as'    => 'add',
+                'uses'  => $c.'@add'
+            ]);
             
             Route::get('/{employee_no}/{key_token}', [
                 'as'    => 'profile',

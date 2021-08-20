@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\MobileV1\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Employee;
+use PhotoUtility;
 use Utility;
 
 class LoginController extends Controller
@@ -17,12 +18,13 @@ class LoginController extends Controller
             'message' => 'Invalid Employee No.'
         ];
 
-        $data = Employee::where('employee_no', 'E-'.$request->employeeNo)->first();
+        $data  = Employee::where('employee_no', 'E-'.$request->employeeNo)->first();
+        $photo = PhotoUtility::employeePhoto($data->employee_no, $data->photo, 'profile');
         
         if($data){
             $response['success'] = true;
             $response['data'] = [
-                'photo'       => $data->photo ? $data->photo : Utility::getDefaultPhoto('user'),
+                'photo'       => $data->photo ? $photo : Utility::getDefaultPhoto('user'),
                 'employee_no' => $data->employee_no,
                 'first_name'  => $data->first_name,
                 'last_name'   => $data->last_name,
