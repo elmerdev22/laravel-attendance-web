@@ -18,6 +18,11 @@ class Index extends Component
 
     public function submit(){
        
+        $response = [
+            'success' => false,
+            'message' => '',
+        ];
+        
         $this->validate([
             'first_name'    => 'required',
             'middle_name'   => 'required',

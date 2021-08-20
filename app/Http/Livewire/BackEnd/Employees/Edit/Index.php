@@ -50,6 +50,11 @@ class Index extends Component
 
     public function submit(){
        
+        $response = [
+            'success' => false,
+            'message' => '',
+        ];
+        
         $data = $this->data();
 
         $rules = [
