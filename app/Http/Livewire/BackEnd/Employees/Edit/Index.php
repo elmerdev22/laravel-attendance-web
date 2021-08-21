@@ -59,7 +59,6 @@ class Index extends Component
 
         $rules = [
             'first_name'    => 'required',
-            'middle_name'   => 'required',
             'last_name'     => 'required',
             'email_address' => 'required|email',
             'contact_no'    => 'required|numeric',

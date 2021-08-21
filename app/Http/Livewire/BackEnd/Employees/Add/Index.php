@@ -25,7 +25,6 @@ class Index extends Component
         
         $this->validate([
             'first_name'    => 'required',
-            'middle_name'   => 'required',
             'last_name'     => 'required',
             'email_address' => 'required|unique:users,email|email',
             'contact_no'    => 'required|numeric',
