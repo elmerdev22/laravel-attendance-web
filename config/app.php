@@ -174,7 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        Maatwebsite\Excel\ExcelServiceProvider::class,
     ],
 
     /*
@@ -234,6 +234,9 @@ return [
         'QueryUtility' => App\Helpers\QueryUtility::class,
         'UploadUtility' => App\Helpers\UploadUtility::class,
         'PhotoUtility' => App\Helpers\PhotoUtility::class,
+
+        // Excel
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];

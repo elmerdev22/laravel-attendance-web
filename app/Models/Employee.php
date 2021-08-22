@@ -12,4 +12,8 @@ class Employee extends Model
     public function attendance(){
         return $this->belongsTo('App\Models\Attendance', 'employee_id', 'id');
     }
+    
+    public function attendances(){
+        return $this->hasMany('App\Models\Employee', 'id', 'employee_id');
+    }
 }

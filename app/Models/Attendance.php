@@ -12,4 +12,5 @@ class Attendance extends Model
     public function employee(){
         return $this->hasOne('App\Models\Employee', 'id', 'employee_id');
     }
+    
 }

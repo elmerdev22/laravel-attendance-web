@@ -8,8 +8,28 @@
             </div>
         </div>
         <div wire:ignore class="card-body">
-            <div id="calendar"></div>
-            <input type="hidden" id="data" value='@json($data)'>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form action="{{route('back-end.employees.export-attendance', ['employee_id' => $employee_id])}}">
+                        @method('GET')
+                        <div class="form-group">
+                            <label>Export Attendance:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="daterangepicker" id="daterangepicker">
+                                <div class="input-group-prepend">
+                                    <button type="submit" class="btn btn-success rounded-right">Export</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-right">
+                    <div id="calendar"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -39,7 +59,7 @@
                 header    : {
                 left  : 'prev,next today',
                 center: 'title',
-                right : 'dayGridMonth,timeGridWeek,timeGridDay'
+                right : 'export, dayGridMonth,timeGridWeek,timeGridDay'
             },
             'themeSystem': 'bootstrap',
             //Random default events
@@ -57,6 +77,14 @@
                     }
                 });
             },
+            customButtons: {
+                export: {
+                    text: 'Export',
+                    click: function() {
+                        alert('clicked export button .{{$employee_id}}');
+                    }
+                }
+            }
         });
   
       calendar.render();

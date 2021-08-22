@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="{{asset('template/assets/plugins/fullcalendar-daygrid/main.min.css')}}">
 <link rel="stylesheet" href="{{asset('template/assets/plugins/fullcalendar-timegrid/main.min.css')}}">
 <link rel="stylesheet" href="{{asset('template/assets/plugins/fullcalendar-bootstrap/main.min.css')}}">
+<link rel="stylesheet" href="{{asset('template/assets/plugins/daterangepicker/daterangepicker.css')}}">
 @endsection
 @section('page_header')
     @php 
@@ -34,4 +35,14 @@
 <script src="{{asset('template/assets/plugins/fullcalendar-timegrid/main.min.js')}}"></script>
 <script src="{{asset('template/assets/plugins/fullcalendar-interaction/main.min.js')}}"></script>
 <script src="{{asset('template/assets/plugins/fullcalendar-bootstrap/main.min.js')}}"></script>
+<script src="{{asset('template/assets/plugins/moment/moment.min.js')}}"></script>
+<script src="{{asset('template/assets/plugins/daterangepicker/daterangepicker.js')}}"></script>
+<script>
+    $('#daterangepicker').daterangepicker({
+        timePicker: false,
+        locale: {
+            format: 'MM/DD/YYYY'
+        }
+    })
+</script>
 @endsection

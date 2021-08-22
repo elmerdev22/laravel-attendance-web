@@ -19,9 +19,11 @@ class LoginController extends Controller
         ];
 
         $data  = Employee::where('employee_no', 'E-'.$request->employeeNo)->first();
-        $photo = PhotoUtility::employeePhoto($data->employee_no, $data->photo, 'profile');
         
         if($data){
+    
+            $photo = PhotoUtility::employeePhoto($data->employee_no, $data->photo, 'profile');
+
             $response['success'] = true;
             $response['data'] = [
                 'photo'       => $data->photo ? $photo : Utility::getDefaultPhoto('user'),

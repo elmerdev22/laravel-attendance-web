@@ -68,6 +68,11 @@ Route::group(['middleware' => ['auth', 'auth.admin']], function(){
                 'uses'  => $c.'@profile'
             ]);
             
+            Route::get('/export/attendance/{employee_id}', [
+                'as'    => 'export-attendance',
+                'uses'  => $c.'@exportAttendance'
+            ]);
+            
         });
 
     });

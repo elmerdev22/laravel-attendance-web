@@ -4,7 +4,9 @@ namespace App\Http\Controllers\BackEnd;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Exports\ExportAttendance;
 use QueryUtility;
+use Excel;
 
 class EmployeesController extends Controller
 {
@@ -35,6 +37,19 @@ class EmployeesController extends Controller
         $filter['where']['employees.key_token'] = $key_token;
         
         return QueryUtility::employees($filter)->first();
+    }
+
+    public function exportAttendance(Request $request, $employee_id){
+
+        $dates = explode(' - ', $request->daterangepicker);
+
+        $data = [
+            'employee_id' => $employee_id,
+            'start_date'  => date('Y-m-d', strtotime($dates[0])),
+            'end_date'    => date('Y-m-d', strtotime($dates[1])),
+        ];
+        
+        return Excel::download(new ExportAttendance($data), 'attendance.xlsx');
     }
     
 }
